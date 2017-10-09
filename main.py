@@ -158,8 +158,27 @@ def main():
     saturn.vy = 3.884579926659154E-03
     saturn.vz = 1.025155282571916E-04
     
+    uranus = Body()
+    uranus.name = 'Uranus'
+    uranus.mass = 86.8103 * 10**24
+    uranus.x = 1.442337843936191E+01
+    uranus.y = -1.373845030140273E+01
+    uranus.z = -2.379221201389048E-01
+    uranus.vx = 2.683840344076701E-03
+    uranus.vy = 2.665016541217002E-03
+    uranus.vz = -2.484232267336756E-05
     
-    loop([sun, mercury, venus, earth, mars, jupiter, saturn])
+    neptune = Body()
+    neptune.name = 'Neptune'
+    neptune.mass = 102.41 * 10**24
+    neptune.x = 1.680361764335730E+01
+    neptune.y = -2.499544328458694E+01
+    neptune.z = 1.274772016011350E-01
+    neptune.vx = 2.584589572083709E-03
+    neptune.vy = 1.768943546348827E-03
+    neptune.vz = -9.629380362804233E-05
+    
+    loop([sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune])
 
 if __name__ == '__main__':
     main()
